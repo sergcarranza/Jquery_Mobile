@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="saber_idioma();">
+<div data-role="page" id="page" data-theme="a" data-position="fixed">
+  <div data-role="header">
+    <h1>Diccionario</h1>
+  </div>
+  <div data-role="content">
+  	<div id="base">
+    	<ul data-role="listview" data-inset="true">
+			<li><a href="#mypanel">
+				<img src="img/info.png">
+		        <h2 id="lblTitInfo"></h2>
+		        <p id="lblInfo"></p></a>
+			</li>
+			<li><a href="#" onClick="idioma(2)">
+        		<img src="img/br.png">
+		        <h2 id="lblPt"></h2>
+		        <p></p></a>
+		    </li>
+		    <li><a href="#" onClick="idioma(1)">
+		        <img src="img/us.png">
+		        <h2 id="lblEn"></h2>
+		        <p></p></a>
+		    </li>
+            <li><a href="#" onClick="idioma(0)">
+		        <img src="img/es.png">
+		        <h2 id="lblEs"></h2>
+		        <p></p></a>
+		    </li>
+		</ul>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+		<ul>
+			<li><a href="#" id="lblShare"></a></li>
+			<li><a href="#" id="lblInvite"></a></li>
+			<li><a href="#" id="lblRefrescar"></a></li>
+			<li><a href="#" id="lblConfig"></a></li>
+		</ul>
+	</div><!-- /navbar -->
+  </div>
+  <div data-role="panel" id="mypanel">
+    <p id="lblPanel"></p>
+  </div><!-- /panel -->
+</div>
+</body>
+</html>
